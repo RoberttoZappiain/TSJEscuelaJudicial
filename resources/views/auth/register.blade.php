@@ -32,7 +32,7 @@
             border: 5px solid; ">
 
             <div class="row mt-2 ml-2 ">
-                <a href="http://escuela-judicial.test/login">
+                <a href="http://tsjescuelajudicialnay.herokuapp.com/login">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="#4c0d0d" class="bi bi-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                     </svg>
@@ -53,7 +53,7 @@
                             <div class="col-12  col-md-6 col-lg-4 text-center">
 
 
-                                <img id="imagenPrevisualizacion2222" style="max-height: 250px; height:250px; width:250px "class="img-fluid img-thumbnail text-center rounded-circle " > <br>
+                                <img id="imagenPrevisualizacion2222" style="max-height: 250px; height:250px; width:250px; object-fit: contain; "class="img-fluid img-thumbnail text-center rounded-circle " > <br>
                                 <label for="formFile" class="form-label mt-2">Imagen perfil</label>
                                 <input name="imagen_perfil" class="form-control " type="file" id="formFilessss" required>
                                 <script>
@@ -164,9 +164,17 @@
                                 id="dirigido_id"
                                 class="form-control offset-lg-0 col-lg-7 mb-3"
                                 >
-                                @foreach ($dirigidos as $id => $name)
+                                <option value="jueces">Jueces</option>
+                                <option value="magist">Magistrados</option>
+                                <option value="secre">Secretarios</option>
+                                <option value="proyec">Proyectistas</option>
+                                <option value="notific">Notificadores y Actuarios</option>
+                                <option value="admini">Administrativos</option>
+                                <option value="externo">Personal Externo</option>
+
+                                {{-- @foreach ($dirigidos as $id => $name)
                                     <option value="{{$id}}">{{$name}}</option>
-                                @endforeach
+                                @endforeach --}}
                             </select>
                             </div>
                          </div>
