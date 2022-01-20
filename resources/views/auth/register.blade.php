@@ -164,17 +164,18 @@
                                 id="dirigido_id"
                                 class="form-control offset-lg-0 col-lg-7 mb-3"
                                 >
+{{--
                                 <option value="jueces">Jueces</option>
                                 <option value="magist">Magistrados</option>
                                 <option value="secre">Secretarios</option>
                                 <option value="proyec">Proyectistas</option>
                                 <option value="notific">Notificadores y Actuarios</option>
                                 <option value="admini">Administrativos</option>
-                                <option value="externo">Personal Externo</option>
+                                <option value="externo">Personal Externo</option> --}}
 
-                                {{-- @foreach ($dirigidos as $id => $name)
+                                 @foreach ($dirigidos as $id => $name)
                                     <option value="{{$id}}">{{$name}}</option>
-                                @endforeach --}}
+                                @endforeach
                             </select>
                             </div>
                          </div>

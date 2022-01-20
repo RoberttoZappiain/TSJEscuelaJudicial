@@ -23,6 +23,8 @@ class CreateUsersInCursosTable extends Migration
             $table->foreign('curso_id')->references('id')->on('cursos')
             ->onUpdate('cascade')
             ->onDelete('cascade');
+            $table->timestamps();
+
         });
     }
 
