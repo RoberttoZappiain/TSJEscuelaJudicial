@@ -35,12 +35,13 @@
                 <div class="row">
                     <h5 style="list-style: none; font-weight: bold;
                     font-size: 20px; color:#dbad3a !important" class="text-center mt-1"> EXPLORAR</h5>
+
                 </div>
                 <div class="row">
                     <ul style="list-style: none;" >
-                        <li><a  style="color:#4c0d0d !important" href="">Inicio</a></li>
-                        <li><a  style="color:#4c0d0d !important" href="">Cursos y Diplomados</a></li>
-                        <li><a  style="color:#4c0d0d !important" href="">Perfil</a></li>
+                        <li><a  style="color:#4c0d0d !important" href="http://tsjescuelajudicialnay.herokuapp.com/inicio">Inicio</a></li>
+                        <li><a  style="color:#4c0d0d !important" href="http://tsjescuelajudicialnay.herokuapp.com/curso">Cursos y Diplomados</a></li>
+                        <li><a  style="color:#4c0d0d !important" href="http://tsjescuelajudicialnay.herokuapp.com/perfil">Perfil</a></li>
                     </ul>
                 </div>
             </div>

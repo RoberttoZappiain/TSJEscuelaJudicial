@@ -15,7 +15,7 @@
             <img class=" logos2 ocultar"   src="../../images/poderjudlogo.png" alt="" srcset="">
         </div>
         <div class="col-12 col-sm-12 mt-3 col-md-6 col-lg-6 col-xl-6 offset-lg-0" style="max-width: 460px; background-color: white">
-            <img class="rounded   col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 " src="../../images/escuelajulogo.png" alt="" srcset="">
+            <img class="rounded  mx-auto d-block  col-8 col-sm-8 col-md-12 col-lg-6 col-xl-6 " src="../../images/escuelajulogo.png" alt="" srcset="">
         </div>
     </div>
     <div class="row " style="background-color: white !important"">
@@ -90,9 +90,9 @@
                     </tr>
                   <tr>
                     @csrf
-                        <input id="role_id" type="hidden" name="role_id" value="2" required autocomplete="name">
                         <div class="form-group row">
                             <div class="col-12 col-lg-6">
+                            <input id="role_id" type="hidden" name="role_id" value="1" required autocomplete="name">
                             <label for="name" class="col-12  form-label-sm text-md-left">Nombre Completo</label><br>
                             <div class="col-12 ">
                                 <input id="name" type="text"
