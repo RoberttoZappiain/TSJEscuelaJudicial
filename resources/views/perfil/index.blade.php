@@ -15,14 +15,14 @@
         </div>
     </div>
 
-    <div class="container mt-5" style="border: 3px solid #4c0d0d; border-radius:10px" >
+    <div class="container sm:mt-0 mt-5" style="border: 3px solid #4c0d0d; border-radius:10px" >
         <div class="row " >
             <div class="col-12 col-sm-12 col-lg-4 col-xl-4  " style="">
-                <h2 class="mt-1" style="color: #4c0d0d">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/> <br>
-                  </svg>Datos Generales</h2>
-
+                <a href="http://tsjescuelajudicialnay.herokuapp.com/cursos" style="font-size: 24px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="#4c0d0d" class=" bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>Datos Generales
+                </a>
             </div>
         </div>
         <div class="row">
