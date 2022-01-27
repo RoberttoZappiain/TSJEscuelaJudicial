@@ -5,23 +5,16 @@
 
 
 @section('content')
-<div  class="container margins" style="background-color: #4c0d0d; margin-top:150px ; visibility: hidden;
-    ">
-        <div class="row" style="">
-            <div class="col-12">
-                <ul>
-                    <li>hola</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-
-    <div class="container mt-1 " style="border:3px solid #4c0d0d">
+    <div class="container mt-3 " style="border:3px solid #4c0d0d">
         <div class="row ">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-12 ">
+
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
               </svg>
+            </div>
+
         </div>
         <div class="row  ">
             <div class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-12 ">
@@ -141,7 +134,7 @@
                             @foreach ($users as $user)
                             <tr>
                                 <td class="d-none d-lg-block">{{$user->id}}</td>
-                                <td><a href="{{ route('usuario.show', $user)}}">{{$user->name}}</a></td>
+                                <td><a style="padding: 0px !important" href="{{ route('usuario.show', $user)}}">{{$user->name}}</a></td>
                                 <td>{{$user->email}}</td>
                                 <td class="text-center">9</td>
                                 <td class="d-none d-lg-block">
