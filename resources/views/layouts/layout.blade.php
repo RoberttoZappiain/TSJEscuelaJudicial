@@ -51,9 +51,9 @@
                 </div>
                 <div class="row">
                     <ul style="list-style: none;" >
-                        <li><a  style="color:#4c0d0d !important" href="http://tsjescuelajudicialnay.herokuapp.com/inicio">Inicio</a></li>
-                        <li><a  style="color:#4c0d0d !important" href="http://tsjescuelajudicialnay.herokuapp.com/curso">Cursos y Diplomados</a></li>
-                        <li><a  style="color:#4c0d0d !important" href="http://tsjescuelajudicialnay.herokuapp.com/perfil">Perfil</a></li>
+                        <li><a style="color:#4c0d0d !important; padding: 0px !important " href="http://tsjescuelajudicialnay.herokuapp.com/inicio">Inicio</a></li>
+                        <li><a  style="color:#4c0d0d !important; padding: 0px !important" href="http://tsjescuelajudicialnay.herokuapp.com/curso">Cursos y Diplomados</a></li>
+                        <li><a  style="color:#4c0d0d !important; padding: 0px !important" href="http://tsjescuelajudicialnay.herokuapp.com/perfil">Perfil</a></li>
                     </ul>
                 </div>
             </div>

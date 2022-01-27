@@ -106,25 +106,25 @@
                 <div class="ml-3 " id="navbarTogglerDemo01">
                     <ul class="nav justify-content-center  ">
                       <li id="list" style="" class="nav-item col-12 ">
-                          <a class="nav-link ass "  href=" ">
+                          <a class="nav-link ass "  href="{{ route('inicio.index')}} ">
                             Inicio</a>
                       </li>
                       <li class="nav-item col-12 " style="list-style: none">
-                        <a class="nav-link ass " href="">
+                        <a class="nav-link ass " href="{{ route('curso.index')}}">
                             Cursos y diplomados</a>
                      </li>
                      <li class="nav-item col-12  " style="list-style: none">
-                        <a class="nav-link ass " style="" href=" "> Mi Perfil</a>
+                        <a class="nav-link ass " style="" href=" {{ route('perfil.index')}}"> Mi Perfil</a>
                      </li>
 
                      @if (auth()->user()->hasRoles(1))
 
-                     <li style="list-style: none" class="nav-item col-12 ml-5 ">
-                         <a class="nav-link ass"  href="">Usuarios</a>
+                     <li style="list-style: none" class="nav-item col-12  ">
+                         <a class="nav-link ass"  href="{{ route('usuario.index')}}">Usuarios</a>
                      </li>
 
                      <li style="list-style: none" class="nav-item col-12 ">
-                        <a class="nav-link ass "  href="" style="">Agregar curso</a>
+                        <a class="nav-link ass "  href="{{ route('curso.create')}}" style="">Agregar curso</a>
                     </li>
 
                     <li class="nav-item col-12 dropdown mt-0" style="list-style: none">
