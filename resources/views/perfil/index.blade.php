@@ -17,7 +17,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-sm-12 col-lg-4 col-xl-4 ">
-                <img class="img-fluid rounded-circle text-center offset-0" src="/storage/{{auth()->user()->imagen_perfil}}" alt="Card image cap" style="max-height: 300px">
+                <img class="img-fluid rounded text-center offset-4" src="/storage/{{auth()->user()->imagen_perfil}}" alt="Card image cap" style="max-height: 250px">
             </div>
             <div class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-5 ">
                 <table>
