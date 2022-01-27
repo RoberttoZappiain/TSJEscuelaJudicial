@@ -4,12 +4,12 @@
 
 @section('content')
 
-    <div class="container margins" style="padding:1em 2rem; margin-top:180px">
+    <div class="container " style="padding:1em 2rem">
             <div class="row">
                     <div class="col-12">
                         <h1 class="text-left txtprimary mt-5" >Lista de cursos</h1>
                     </div>
-            </div>
+                     </div>
                         <div class="row mt-1 " >
 
                             @switch(Auth()->user()->cargo)
@@ -160,7 +160,11 @@
                                         </div>
                                     @endif
                                     @empty
-                                    No hay Cursos Disponibles
+                                    <div class="row" style="padding:1em 2rem">
+                                        <div class="col-12">
+                                            <h3 class="text-center txtprimary" >No tenemos cursos disponibles en este momento</h3>
+                                        </div>
+                                         </div>
                                 @endforelse
                                 @break
                             @case(7)

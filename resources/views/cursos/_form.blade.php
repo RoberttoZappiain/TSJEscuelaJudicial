@@ -1,6 +1,8 @@
-<div class="container " style="padding:4em 2rem; margin-top:80px !important">
-    <h3 >Ingresa los datos siguientes</h3>
+<div class="container " style="padding:4em 2rem">
 
+    <div class="col-12">
+        <h1 class="text-center txtprimary" >Ingresa los datos siguientes</h1>
+    </div>
     <div class="row">
         @if ($curso->imagen_curso)
                     <div class="col-12 col-1g-3 offset-lg-3">

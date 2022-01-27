@@ -14,7 +14,19 @@
 
 
 </head>
-<header>
+<style>
+    @media (max-width: 600px) {
+      .headers {
+        height: 200px !important      }
+    }
+    .headers{
+        height: 250px
+    }
+
+
+    </style>
+<header class="headers">
+
     @include('partials.nav')
 
 </header>

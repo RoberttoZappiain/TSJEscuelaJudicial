@@ -19,7 +19,7 @@
                 <img class=" m-3 logos2 ocultar"   src="../../images/poderjudlogo.png" alt="" srcset="">
             </div>
             <div class="col-12 col-sm-12 mt-3 col-md-6 col-lg-6 col-xl-6 offset-lg-0" style="max-width: 460px; background-color: white">
-                <img class="rounded m-3  mx-auto d-block  col-6 col-sm-6 col-md-12 col-lg-6 col-xl-6 " src="../../images/escuelajulogo.png" alt="" srcset="">
+                <img class="rounded m-3  mx-auto d-block  col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 " src="../../images/escuelajulogo.png" alt="" srcset="">
             </div>
         </div>
         <div class="row ssh" style="background-color: none !important"">

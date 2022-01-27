@@ -7,40 +7,33 @@
 @section('content')
 
 {{-- <h1>ola diablo</h1> --}}
-<div class="container margins" style="background-color: #4c0d0d; margin-top:150px; visibility: hidden;
-    ">
-        <div class="row" style="">
-            <div class="col-12">
-                <ul>
-                    <li>hola</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="container " style="padding:1em 2rem; ">
+    <div class="container mt-3" style="padding:1em 2rem; ">
+        <div class="row rounded d-flex justify-content-center align-items-center" style="background-color: white">
+            <h3 class="text-center text-uppercase font-weight-bold mt-1" style="color: #4c0d0d">
+                 Bienvenido de vuelta, {{auth()->user()->name}} <br>
+
+            </h3>
+        </div>
         <div class="row">
-            <h5 class="mb-5" style="color:#4c0d0d; : left !important; font-family:'montserrat">Bienvenido {{auth()->user()->name}} !</h5>
-        </div>
-        <div class="row ocultar">
+            <h1 class="txtprimary ml-1 mt-3 ">Novedades</h1>
             <div class="col-12 text-center">
-
                 <div id="carouselExampleControls" class="carousel slide col-12 col-sm-12 col-lg-12" data-ride="carousel">
                     <div class="carousel-inner">
                     <div class="carousel-item active align-items-center">
-                        <img class="img-fluid img-thumbnail"  src="images/c1.jpeg" alt="primer slide" style="height: 350px" >
+                        <img class="img-fluid img-thumbnail"  src="images/c1.jpeg" alt="primer slide" style="max-height: 350px" >
                     </div>
                     <div class="carousel-item align-items-center">
                         <img class="img-fluid img-thumbnail" src="images/c2.jpeg" alt="segundo slide" style="max-height: 350px">
                     </div>
 
                     </div>
-                    <a class="carousel-control-prev mts" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <a class="carousel-control-prev " href="#carouselExampleControls" style="max-height: 350px" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon rounded p-2" aria-hidden="true" style="background-color: gray"></span>
                     <span class="sr-only align-middle" >Anteriro</span>
                     </a>
-                    <a class="carousel-control-next mts" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <a class="carousel-control-next " href="#carouselExampleControls" style=" max-height: 350px" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon rounded p-2" aria-hidden="true" style="background-color: gray"></span>
                     <span class="sr-only">Siguiente</span>
                     </a>
                 </div>
@@ -49,7 +42,7 @@
 
         <div class="row">
 
-            <h1 class="txtprimary ml-1 mt-3 ">Lista de cursos y diplomados</h1>
+            <h1 class="txtprimary ml-1 mt-5 ">Lista de cursos y diplomados</h1>
         </div>
             <div class="row mt-1 " >
                 @switch(Auth()->user()->cargo)
@@ -74,8 +67,12 @@
                             </div>
                         @endif
                         @empty
-                        No hay Cursos Disponibles
-                    @endforelse
+                        <div class="row">
+                            <h5 class="text-secondary text-center p-5">
+                                No hay Cursos Disponibles
+
+                            </h5>
+                        </div>                    @endforelse
                     @break
                 @case(2)
                     @forelse ($inicio as $inicioItem)
@@ -98,8 +95,12 @@
                             </div>
                         @endif
                     @empty
-                    No hay Cursos Disponibles
-                    @endforelse
+                    <div class="row">
+                        <h5 class="text-secondary text-center p-5">
+                            No hay Cursos Disponibles
+
+                        </h5>
+                    </div>                    @endforelse
                         @break
                 @case(3)
                     @forelse ($inicio as $inicioItem)
@@ -122,8 +123,12 @@
                             </div>
                         @endif
                     @empty
-                    No hay Cursos Disponibles
-                    @endforelse
+                    <div class="row">
+                        <h5 class="text-secondary text-center p-5">
+                            No hay Cursos Disponibles
+
+                        </h5>
+                    </div>                    @endforelse
                         @break
                 @case(4)
                     @forelse ($inicio as $inicioItem)
@@ -146,8 +151,12 @@
                             </div>
                         @endif
                     @empty
-                    No hay Cursos Disponibles
-                    @endforelse
+                    <div class="row">
+                        <h5 class="text-secondary text-center p-5">
+                            No hay Cursos Disponibles
+
+                        </h5>
+                    </div>                    @endforelse
                         @break
                 @case(5)
                     @forelse ($inicio as $inicioItem)
@@ -170,8 +179,12 @@
                             </div>
                         @endif
                     @empty
-                    No hay Cursos Disponibles
-                    @endforelse
+                    <div class="row">
+                        <h5 class="text-secondary text-center p-5">
+                            No hay Cursos Disponibles
+
+                        </h5>
+                    </div>                    @endforelse
                         @break
                 @case(6)
                     @forelse ($inicio as $inicioItem)
@@ -194,7 +207,12 @@
                             </div>
                         @endif
                     @empty
-                    No hay Cursos Disponibles
+                    <div class="row">
+                        <h5 class="text-secondary text-center p-5">
+                            No hay Cursos Disponibles
+
+                        </h5>
+                    </div>
                     @endforelse
                         @break
                 @case(7)
@@ -218,8 +236,12 @@
                             </div>
                         @endif
                     @empty
-                    No hay Cursos Disponibles
-                    @endforelse
+                    <div class="row">
+                        <h5 class="text-secondary text-center p-5">
+                            No hay Cursos Disponibles
+
+                        </h5>
+                    </div>                    @endforelse
                         @break
 
                 @default

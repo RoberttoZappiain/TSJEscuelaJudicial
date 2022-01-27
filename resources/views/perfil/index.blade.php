@@ -4,18 +4,8 @@
 
 
 @section('content')
-    <div class="container margins" style="background-color: #4c0d0d; margin-top:150px ; visibility: hidden;
-    ">
-        <div class="row" style="">
-            <div class="col-12">
-                <ul>
-                    <li>hola</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <div class="container sm:mt-0 mt-5" style="border: 3px solid #4c0d0d; border-radius:10px" >
+    <div class="container sm-mt-0 mt-5" style="border: 3px solid #4c0d0d; border-radius:10px" >
         <div class="row " >
             <div class="col-12 col-sm-12 col-lg-4 col-xl-4  " style="">
                 <a href="http://tsjescuelajudicialnay.herokuapp.com/cursos" style="font-size: 24px">
@@ -104,15 +94,18 @@
                 </table>
             </div>
             @if (auth()->user()->hasRoles(1))
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-6 ">
+            <div class="row d-block p-2">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
                <div class="text-center">
-                    <a class="btn btn-primary btn-sm btn-block  colorbtnpss mb-0">Editar </a>
+                    <a class="btn btn-outline-info btn-sm btn-block mb-0">Editar </a>
                </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-6">
+
+            </div>
+            <div class="row d-block p-2">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="text-center">
-                        <button class="btn btn-danger btn-sm btn-block delete-btn colorbtnpss " data-toggle="modal" data-target="#modelId">Eliminar cuenta</button>
+                        <button class="btn btn-outline-danger btn-sm btn-block " data-toggle="modal" data-target="#modelId">Eliminar cuenta</button>
                     </div>
 
                 </div>

@@ -3,9 +3,7 @@
 @section('title', 'Crear curso')
 
 @section('content')
-    <div class="row mt-5" style="height: 100px">
 
-    </div>
     @include('partials.validation-errors')
         @if (auth()->user()->hasRoles(1))
             <form method="POST" enctype="multipart/form-data" action="{{ route('curso.store')}}">
